@@ -23,7 +23,7 @@ TERMINALタブで以下を実行する
 ※main.pyのあるディレクトリで実行
 ```
 例:
-cd cd src/api/
+cd src/api/
 uvicorn main:app --reload --port 3000
 ```
 
