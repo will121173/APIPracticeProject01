@@ -35,8 +35,8 @@ uvicorn main:app --reload --port 3000
 
 ```
 例:
-cd cd src/web/
- python -m http.server 8000
+cd src/web/
+python -m http.server 8000
 ```
 
 ![](res/readme_terminal.png)
