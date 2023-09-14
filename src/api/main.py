@@ -17,7 +17,7 @@ async def root():
 import datetime
 @app.get("/date/",
     summary='date and weekday information',
-    description='年月日と平日か否かを出力する。forwardパラメータに入れた整数分だけ先の日付をしていできる・',
+    description='実行した年月日と平日か否かを出力する。forwardパラメータに整数を入れるとその数だけ先の日付で判定する。',
     response_description='response',
     tags=['sample']
     )    
@@ -26,6 +26,6 @@ async def get_date(forward:int=0):
     targetDatetime = nowDatetime.today() + datetime.timedelta(days=forward)
     return {
         "date": targetDatetime.date(),
-        "is_weekday" : "平日です" if targetDatetime.isoweekday() else "休日です"
+        "is_weekday" : "平日です" if targetDatetime.isoweekday()>5 else "休日です"
         }
 
