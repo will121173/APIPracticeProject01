@@ -26,6 +26,6 @@ async def get_date(forward:int=0):
     targetDatetime = nowDatetime.today() + datetime.timedelta(days=forward)
     return {
         "date": targetDatetime.date(),
-        "is_weekday" : "平日です" if targetDatetime.isoweekday()>5 else "休日です"
+        "is_weekday" : "平日です" if targetDatetime.isoweekday()<6 else "休日です"
         }
 

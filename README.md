@@ -9,6 +9,8 @@
 GitHub上から、下記リンクでIDEに遷移する  
 → [open in gitpod](https://gitpod.io/#github.com/will121173/APIPracticeProject01)
 
+※2回目以降、自身のファイルを再度開く場合は、[Workspaces](https://gitpod.io/workspaces)  から。  
+
 
 ## 2. サンプル作成・デプロイ
 （ここからはGitPod上で操作する）
