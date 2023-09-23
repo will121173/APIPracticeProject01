@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sample html file</title>
+</head>
+
+<body>
+    <script async src="sample2JS.js"></script>
+    <h1>sample2 家計簿アプリ風API利用サンプル</h1>
+    <div id="text1">データの登録と表示ができます。サンプルがいくつか既に入っています。</div>
+    <div id="content1">
+        <div>
+            <div>
+                ユーザーID : <input type="number" name="userid" id="userid"><br>
+            </div>
+        </div>
+        <div>
+            <div class="float"> データ登録：
+            </div>
+            <table class="float">
+                <tr>
+                    <th>値段</th>
+                    <th>購入したものの名前</th>
+                </tr>
+                <tr>
+                    <td><input type="number" id="price" placeholder="price"></td>
+                    <td><input type="text" id="itemName" placeholder="itemName"></td>
+                </tr>
+            </table>
+            <div class="float">
+                <button type="button" onclick="createRecord();" class="bigButton">登録</button><br>
+                ※ユーザーID必須
+            </div>
+        </div>
+        <div>
+            <button type="button" onclick="showRecords();" class="bigButton">ユーザーIDを指定して表示</button>
+        </div>
+        <div id="tableElement">ここにレコードが表示されます</div>
+    </div>
+</body>
+
+</html>
